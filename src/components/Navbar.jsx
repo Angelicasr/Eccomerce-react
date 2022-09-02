@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Burguerbutton from './Burguerbutton';
+import  CartWidget from './CartWidget/index';
+
 
 
 function Navbar() {
@@ -18,7 +20,7 @@ return (
         <a onClick={handleClick} href="#h">Tienda</a>
         <a onClick={handleClick} href="#h">Categorias</a>
         <a onClick={handleClick} href="#h">Contacto</a>
-        <a onClick={handleClick} href="#h">Usuario</a>
+        <a onClick={handleClick} href="#h"><CartWidget/></a>
         </div>
         <div className='burguer'>
         <Burguerbutton clicked={clicked} handleClick={handleClick} />

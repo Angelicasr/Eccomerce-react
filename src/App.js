@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import ItemListContainer from './components/ItemsListContainer';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
         <div>
           <Navbar/>
+          <ItemListContainer/>
         </div>
   );
 }
