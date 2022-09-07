@@ -1,11 +1,19 @@
 import React from 'react';
 import Title from '../Title';
+import ItemCount from '../ItemCount';
 
 
 
-export const ItemListContainer = () => {
+export const ItemListContainer = ({texto}) => {
+
+    const onAdd = (quantity) => {
+        console.log('compraste ${quantity} unidades');
+    }
     return (  
-        <Title />
+        <>
+        <Title greeting = {texto}/>
+        <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+        </>
     );
 }
 
