@@ -1,19 +1,16 @@
-import Title from '../Title';
 import ItemCount from '../ItemCount';
 import ItemList from '../ItemList';
 import React, {useState, useEffect} from 'react';
+import Title from '../Title';
 
 
-const productos =[
-    {id: 1, image:"http://d3ugyf2ht6aenh.cloudfront.net/stores/001/211/660/products/jose-cuervo1-cc6f76f78705cf1bf416426897613153-640-0.jpg",
-    title: "Jose Cuervo Dorado"
-    },
+const producto =[
+    {id: 1, image:"https://whiskypedia.com.ar/wp-content/uploads/2020/06/Tequila-Jose-Cuervo-Reposado-750-ml.jpg",
+    title: "Tequila"},
     {id: 2, image:"https://www.venestore.com.ar/productos/santa-teresa-gran-reserva/",
-    title: "santa teresa"
-    },
+    title: "Ron"},
     {id: 3, image:"https://vinotecaligier.com/vg-rutini-malbec-2004-750.html",
-    title: "Vino rutini"
-    },
+    title: "Vino"},
 
 ];
 
@@ -23,7 +20,7 @@ export const ItemListContainer = ({texto}) => {
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
-                resolve(productos);
+                resolve(producto);
             }, 1000);
         });
         getData.then(res => setData(res));
@@ -31,7 +28,7 @@ export const ItemListContainer = ({texto}) => {
 
 
     const onAdd = (quantity) => {
-        console.log('compraste ${quantity} unidades');
+        console.log('compraste $ {quantity} unidades');
     }
     return (  
         <>
