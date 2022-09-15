@@ -18,7 +18,6 @@ return (
 export default Burguerbutton
 
 const Burguer = styled.div`
-/* https://codepen.io/ahmadbassamemran/pen/VQwPGr  */
 .nav-icon-8{
   width: 35px;
   height: 30px;

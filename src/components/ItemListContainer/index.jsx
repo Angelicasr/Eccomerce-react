@@ -4,14 +4,9 @@ import React, {useState, useEffect} from 'react';
 import Title from '../Title';
 
 
-const producto =[
-    {id: 1, image:"https://whiskypedia.com.ar/wp-content/uploads/2020/06/Tequila-Jose-Cuervo-Reposado-750-ml.jpg",
-    title: "Tequila"},
-    {id: 2, image:"https://www.venestore.com.ar/productos/santa-teresa-gran-reserva/",
-    title: "Ron"},
-    {id: 3, image:"https://vinotecaligier.com/vg-rutini-malbec-2004-750.html",
-    title: "Vino"},
-
+const producto = [
+    { id:1, image:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/926/291/products/bfbdc6f7-cf46-437c-9904-9789dfcfd26b-5f6dbf03b61ff2814216372567269719-1024-1024.jpeg",
+    title: "Tequila Jose Cuervo Dorado"}
 ];
 
 export const ItemListContainer = ({texto}) => {
@@ -24,6 +19,7 @@ export const ItemListContainer = ({texto}) => {
             }, 1000);
         });
         getData.then(res => setData(res));
+
     }, [])
 
 
@@ -32,8 +28,8 @@ export const ItemListContainer = ({texto}) => {
     }
     return (  
         <>
-        <Title greeting = {texto} />
-        <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+        <Title greeting ={texto} />
+        <ItemCount initial={1} stock={10} onAdd={onAdd} />
         <ItemList data={data}/>
         </>
     );
