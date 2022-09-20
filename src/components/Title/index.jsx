@@ -4,7 +4,7 @@ import React from 'react';
 
 export const Title = () => {
     return (  
-        <h1>Categorias</h1>
+        <h1>categoria</h1>
     );
 }
 

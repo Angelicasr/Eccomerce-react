@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Burguerbutton from './Burguerbutton';
 import  CartWidget from './CartWidget';
-import {NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 
 
@@ -17,11 +17,11 @@ return (
     <NavContainer>
     <h2>ALAMBIQUE <span>BODEGON</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
-        <Navlink onClick={handleClick} to={}>Inicio</Navlink>
-        <Navlink onClick={handleClick} to={}>Tienda</Navlink>
-        <Navlink onClick={handleClick} to={}>Categorias</Navlink>
-        <Navlink onClick={handleClick} to={}>Contacto</Navlink>
-        <Navlink onClick={handleClick} to={}><CartWidget/></Navlink>
+        <NavLink onClick={handleClick} className="nav__link"  to='/'>Inicio</NavLink>
+        <NavLink onClick={handleClick} className="nav__link" to='/Categoria/Ron'>Ron</NavLink>
+        <NavLink onClick={handleClick} className="nav__link" to='/Categoria/wisky'>wisky</NavLink>
+        <NavLink onClick={handleClick} className="nav__link" to='/'>Contacto</NavLink>
+        <NavLink onClick={handleClick} className="nav__link" to='/Cart'> <CartWidget/></NavLink>
         </div>
         <div className='burguer'>
         <Burguerbutton clicked={clicked} handleClick={handleClick} />
