@@ -1,5 +1,9 @@
 .product {
-    display: block;
+    display: list-item;
+    justify-content: center;
+    margin-left: 550px;
+    text-align: center;
+    
     width: 380px;
 }
 

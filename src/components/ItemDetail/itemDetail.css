@@ -2,6 +2,10 @@
     width: 98%;
     margin: auto;
 }
+image{
+    width: 500px;
+    height: 500px;
+}
 @media screen and (min-width:768px) {
     .container{
         width: 70%;
@@ -11,9 +15,12 @@
 .detail {
 margin-top: 3rem;
 margin-bottom: 3rem;
-width: 100%;
+width: 60%;
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
+margin-left: 200px;
+margin-top: 100px;
+text-align: center;
 }
 
 .detail__image {

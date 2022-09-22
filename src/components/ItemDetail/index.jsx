@@ -24,6 +24,9 @@ export const ItemDetail = ({data }) => {
                 <img className='detail__image' src={data.image} alt=""/>
                 <div className="content">
                     <h1>{data.title}</h1>
+                    <p> {data.title} </p>
+                    <p>{data.price}</p>
+            <p>750mL</p>
                 {
                     goToCart
                     ? <Link to='/cart'> TERMINAR COMPRA</Link>
