@@ -3,7 +3,9 @@ import  './item.css';
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
 const Item = ({ info }) => {
+
     return (
         <Link to={`/detalle/${info.id} `} className="product">
             <img src={info.image} alt=""/>
