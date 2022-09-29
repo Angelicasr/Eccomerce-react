@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartProvider from './context/CartContext';
 import React from 'react';
 
-
 document.body.style.backgroundColor = "grey";
 
 
