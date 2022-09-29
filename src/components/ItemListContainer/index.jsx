@@ -8,6 +8,7 @@ import {getFirestore, collection, getDocs, query, where} from 'firebase/firestor
 
 
 
+
 export const ItemListContainer = ({texto}) => {
     const [data, setData] = useState([]);
 
@@ -17,7 +18,7 @@ export const ItemListContainer = ({texto}) => {
         const querydb = getFirestore();
         const queryCollection = collection(querydb,'productos');
 
-        if(categoriaId) {
+        if (categoriaId) {
             const queryFilter = query(queryCollection, where('category', '==', categoriaId))
             getDocs(queryFilter)
                 .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))
